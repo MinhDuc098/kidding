@@ -63,7 +63,7 @@
       
             <!-- Modal Header -->
             <div class="modal-header text-center">
-              <h4 class="modal-title " style="color: red; font-size: 47px; width: 100%;">WARNING!WARNING!</h4>
+              <h4 class="modal-title " style="color: red; font-size: 47px; width: 100%;display:none">WARNING!WARNING!</h4>
               
               <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
             </div>
@@ -94,7 +94,7 @@
         window.alert("WARNING! Your device is under attacking!");
         confirm("Do you want to defend your device from attacking?(We don't take the responsibility if you ignore this Warning)");
         document.body.classList.add("red-bg");
-        virusMessage.classList.remove("hidden");
+        virusMessage.style.display = "block";
         TriggerButton.style.display = "none";
         firework.disable = true;
 
