@@ -151,3 +151,30 @@ body {
     top: 60%;
     animation-delay: -0.4s;
   }
+  .hidden{
+    display: none;
+  }
+  .red-bg {
+    background-color: red;
+}
+.animated-element {
+  width: 50px;
+  height: 50px;
+  /* background-color: blue; */
+  position: relative;
+  animation: moveUpDown 2s ease-in-out infinite; /* Apply the animation */
+}
+@keyframes moveUpDown {
+  0% {
+      transform: translateY(0); /* Initial position */
+  }
+  50% {
+      transform: translateY(-20px); /* Move up */
+  }
+  100% {
+      transform: translateY(0); /* Back to initial position */
+  }
+}
+/* img{
+  width: 18%;
+} */
